@@ -2,6 +2,8 @@
 # -*- coding: utf-8 -*-
 
 
+# Chapitre 4 - Exercices en classe
+
 def is_even_len(string: str) -> bool:
     return len(string) % 2 == 0
 
