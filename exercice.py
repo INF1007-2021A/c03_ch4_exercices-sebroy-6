@@ -17,15 +17,15 @@ def replace_char(string: str, old_char: str, new_char: str) -> str:
 
 
 def get_nb_char(string: str, char: str) -> int:
-    Occurences = 0
+    occurences = 0
     for Character in string:
         if Character == char:
-            Occurences += 1
-    return Occurences
+            occurences += 1
+    return occurences
 
 
 def get_nb_words(sentence: str) -> int:
-    return sentence.count(" ") +1
+    return sentence.count(" ") + 1
 
 
 def main() -> None:
@@ -37,7 +37,8 @@ def main() -> None:
     print(f"On supprime le 3e caratère dans la chaine '{string}'. Résultat: {remove_third_char(string)}")
 
     string = "hello world!"
-    print(f"On remplace le caratère w par le caractère z dans la chaine: '{string}'. Résultat: {replace_char(string, 'w', 'z')}")
+    print(f"On remplace le caratère w par le caractère z dans la chaine: '{string}'"
+          f". Résultat: {replace_char(string, 'w', 'z')}")
 
     print(f"Le nombre d'occurrence de l dans hello est : {get_nb_char(string, 'l')}")
     
