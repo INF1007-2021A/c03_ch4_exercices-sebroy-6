@@ -17,11 +17,11 @@ def replace_char(string: str, old_char: str, new_char: str) -> str:
 
 
 def get_nb_char(string: str, char: str) -> int:
-    occurences = 0
+    nb_occurences = 0
     for Character in string:
         if Character == char:
-            occurences += 1
-    return occurences
+            nb_occurences += 1
+    return nb_occurences
 
 
 def get_nb_words(sentence: str) -> int:
